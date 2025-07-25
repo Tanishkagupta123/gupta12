@@ -1,0 +1,36 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+
+}
+
+
+
+
+
+#navbar{
+width: 100%;
+height: 80px;
+border: 2px solid black;
+background-color: rgb(162, 25, 25);
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: 20px;
+padding-top: 10px;
+ }
+
+#navbar nav ul li a{
+ text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+#navbar nav ul li{
+display: flex;
+gap: 10px;
+list-style: none;
+
+}
