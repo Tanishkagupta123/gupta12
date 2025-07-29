@@ -245,3 +245,29 @@
     /* margin-left: 10px; */
 
 }
+
+#thirdpage div button {
+
+    width: 170px;
+    color: white;
+    background-color: black;
+    padding: 18px;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 20px;
+margin-bottom: 30px;
+}
+
+#thirdpage div button:hover {
+
+    background-color: #f76d37;
+
+}
+
+#fourthpage {
+
+    width: 100%;
+    height: 400px;
+
+
+}
