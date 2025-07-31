@@ -138,29 +138,6 @@
     font-size: 30px;
 }
 
-/* .slide1{ */
-/* position: absolute; */
-/* width: 100%; */
-/* height: 100%; */
-/* animation: 5s infinite; */
-
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-.slide1 {
-    animation: slideIn 1s ease-out forwards;
-}
-
 #secondpage {
     display: flex;
     /* justify-content: center; */
@@ -188,9 +165,6 @@
     display: flex;
     padding-top: 30px;
     padding-bottom: 30px;
-
-
-
 }
 
 .gallery {
@@ -219,9 +193,6 @@
     padding-left: 50px;
 
 }
-
-
-
 
 #thirdpage {
     width: 100%;
@@ -303,19 +274,68 @@
 
 }
 
+.mainbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center;  */
+    margin-top: 20px;
+}
 
-#mainbox {
 
-    width: 100%;
-    height: 430px;
-    border: 1px solid black;
+.service-box {
+    background-color: #ff6f3c;
+    color: aqua;
+    /* color: black; */
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    background-color: rgb(237, 25, 18);
 
 }
 
-#mainbox fire1{
+#fifthpage {
 
     width: 100%;
-    height: 100px;
-    border: green;
+    height: 100vh;
 
+}
+
+#fifthpage h1 {
+    padding-top: 60px;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    color: #f76d37;
+
+}
+
+#fifthpage .paragraph1 {
+    padding-top: 20px;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: gray;
+
+}
+
+#fifthpage h2 {
+
+    padding-top: 60px;
+    padding-left: 200px;
+    font-size: 35px;
+    color: #f76d37;
+}
+
+.paragraph2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: gray;
+    padding-left: 90px;
+    line-height: 1.5;
 }
