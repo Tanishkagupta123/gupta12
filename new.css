@@ -76,6 +76,7 @@
 
 }
 
+
 .port {
 
     /* font-size: large; */
@@ -96,6 +97,8 @@
     font-style: normal;
     font-size: 60px;
     /* letter-spacing: 1px; */
+    text-shadow: 7px 6px 10px black;
+    transition: transform 0.3s;
 }
 
 .shop {
@@ -106,8 +109,10 @@
     font-size: 60px;
     font-weight: 800px;
     letter-spacing: 1px;
+    text-shadow: 10px 8px 10px black;
 
 }
+
 
 .button {
     width: 170px;
@@ -154,7 +159,14 @@
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #f76d37;
+    text-shadow: 3px 3px gray;
 }
+
+/* .head2:hover{
+ text-shadow: 3px 3px gray;
+
+
+} */
 
 .port2 {
     color: gray;
@@ -182,10 +194,21 @@
 }
 
 #secondpage img {
+
     padding-top: 140px;
     padding-left: 70px;
+    transition: transform 5s;
+}
+
+#secondpage img:hover {
+    /* box-shadow: 5px 5px 3px; */
+    transform: rotate(360deg);
+    border-radius: 40%;
+    cursor: pointer;
+
 
 }
+
 
 #secondpage div {
 
@@ -222,14 +245,17 @@
     padding-left: 5px;
     padding-right: 5px;
     /* margin-left: 10px; */
-
+    transition: transform 0.3s;
 }
 
 #thirdpage div img:hover {
-
+    border-radius: 50%;
     box-shadow: 3px 3px 10px 3px;
     cursor: pointer;
-
+    transform: rotate(360deg);
+    /* transition: transform 10s; */
+    transform: translateY(-5px);
+    /* transition: transform 5s; */
 }
 
 .button3 {
@@ -302,14 +328,21 @@
 
 .service-box:hover {
     transform: translateY(-5px);
-    background-color: rgb(237, 25, 18);
+    background-color: rgba(237, 25, 18, 0.786);
     box-shadow: 5px 5px 10px 3px;
+    border-radius: 35%;
+    /* transform: scale(5.5); */
+    transform: rotate(360deg);
+    /* cursor: pointer; */
+    transition: transform 5s;
+
+
 }
 
 #fifthpage {
 
     width: 100%;
-    height: 100vh;
+    height: 70vh;
 
 }
 
@@ -349,7 +382,7 @@
     line-height: 1.5;
     /* padding: 30px; */
     padding-top: 30px;
-padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .paragraph2:hover {
@@ -361,23 +394,24 @@ padding-bottom: 30px;
     position: absolute;
     top: 0;
     left: 0;
-    width: 20%;
-    height: 20%;
-    border-top: 3px solid rgb(237, 160, 16);
+    width: 10%;
+    height: 60%;
+    border-top: 3px solid rgb(65, 140, 187);
     border-left: 3px solid rgb(195, 41, 92);
     transition: all 0.5s ease;
     pointer-events: none;
 
 }
-.paragraph2::after{
+
+.paragraph2::after {
 
     content: '';
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 20%;
-    height: 20%;
-    border-bottom: 3px solid rgb(237, 160, 16);
+    width: 10%;
+    height: 60%;
+    border-bottom: 3px solid rgb(195, 26, 184);
     border-right: 3px solid rgb(195, 41, 92);
     transition: all 0.5s ease;
     pointer-events: none;
@@ -385,11 +419,10 @@ padding-bottom: 30px;
 }
 
 .paragraph2:hover::before,
-.paragraph2:hover::after
-{
+.paragraph2:hover::after {
 
-width: 100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -397,26 +430,36 @@ height: 100%;
 
 
 #sixpage {
-
+    /* background-image: url(./img-9\ coffee); */
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding-top: 100px;
+    /* flex-direction: ; */
+    /* padding-top: 50px; */
     color: #f76d37;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+
 }
 
 #sixpage map {
 
-    /* display:flex;
-    justify-content:center;
-align-items: center; */
-    padding-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 10%; */
     /* padding-top: 100px; */
+}
+
+#sixpage h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
 
 }
