@@ -596,7 +596,7 @@
         display: block;
         color: white;
         font-size: 25px;
-        top: 10px;
+        top: 30px;
         left:90%;
         cursor: pointer;
         z-index: 999;
@@ -607,11 +607,13 @@
     font-size: 40px;
 }
 
-#firstpage img {
-
-    
-    width:100%;
-
+#navbar img{
+    width: 60%;
 }
+
+#navbar i{
+    display: none;
+}
+
 
 }
