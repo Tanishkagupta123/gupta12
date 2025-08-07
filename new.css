@@ -544,7 +544,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.about ul li{
+.about ul li {
     list-style: none;
 }
 
@@ -553,5 +553,65 @@
     font-size: 25px;
 }
 
+#check {
+    display: none;
+    z-index: 999;
+
+}
+
+@media(max-width:435px) {
+
+    #navbar {
+        background-color: black;
+    }
+
+    #navbar nav ul {
+
+        display: none;
+    }
+
+    #navbar nav ul li a{
+        color: blue;
+       /* padding-left: -50px; */
+
+    }
 
 
+    #check:checked~#navbar nav ul {
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 0px;
+        width: 100%;
+        /* background-color: rgb(16, 178, 151); */
+        text-align: center;
+        line-height: 20px;
+        z-index: 999;
+
+
+    }
+
+    #mainbar {
+        position: absolute;
+        display: block;
+        color: white;
+        font-size: 25px;
+        top: 10px;
+        left:90%;
+        cursor: pointer;
+        z-index: 999;
+
+    }
+
+.head{
+    font-size: 40px;
+}
+
+#firstpage img {
+
+    
+    width:100%;
+
+}
+
+}
