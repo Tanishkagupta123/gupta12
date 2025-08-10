@@ -328,7 +328,7 @@
 #fifthpage {
 
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 
 #fifthpage h1 {
@@ -639,5 +639,13 @@ align-items:center ;
     flex-wrap: wrap;
 
 }
+
+#sevenpage{
+
+height: auto;
+display: flex;
+flex-wrap: wrap;
+}
+
 
 }
