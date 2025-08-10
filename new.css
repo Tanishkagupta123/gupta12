@@ -609,4 +609,35 @@
 }
 
 
+.mainbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center;  */
+    margin-top: 20px;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+#fourthpage p{
+
+display: flex;
+justify-content: center;
+align-items:center ;
+}
+
+
+#fifthpage {
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#sixpage {
+
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
 }
