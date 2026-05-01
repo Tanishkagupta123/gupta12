@@ -42,7 +42,7 @@
     list-style: none;
     justify-content: center;
     align-items: center;
-    padding-left: 500px;
+    padding-left: 0;
 }
 
 #navbar i {
@@ -223,7 +223,7 @@
 #thirdpage div {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: auto;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -415,13 +415,13 @@
 
 #sixpage {
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
 
 
 }
 
-#sixpage .img_form {
+/* #sixpage .img_form {
     width: 50%;
     height: 400px;
     background-image: url(coffe\ beans.jpg);
@@ -433,7 +433,7 @@
     flex-direction: column;
     /* padding-left: 20px; */
 
-}
+/* } */
 
 #sixpage .img_form {
     width: 50%;
@@ -449,7 +449,8 @@
 }
 
 #sixpage .img_form form input {
-    width: 600px;
+    width: 100%;
+    max-width: 400px;
     height: 35px;
     /* border: 0px; */
     border-radius: 30px;
@@ -457,7 +458,8 @@
 }
 
 #sixpage .img_form form textarea {
-    width: 600px;
+    width: 100%;
+    max-width: 400px;
     height: 60px;
     /* border: 0px; */
     border-radius: 30px;
@@ -540,6 +542,7 @@
 
     #navbar {
         background-color: black;
+
     }
 
     #navbar nav ul {
@@ -564,6 +567,7 @@
         text-align: center;
         line-height: 20px;
         z-index: 999;
+
 
 
     }
@@ -654,11 +658,7 @@ flex-wrap: wrap;
     flex-wrap: wrap;
 
 }
-
-
-
-
-
-
-
 }
+
+/*  */
+
