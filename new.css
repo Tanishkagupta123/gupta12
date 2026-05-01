@@ -54,7 +54,9 @@
     color: #f76d37;
 
 }
-
+#mainbar {
+    display: none;
+}
 
 #firstpage {
 
@@ -268,7 +270,7 @@
     width: 100%;
     height: auto;
     background-attachment: fixed;
-    margin-top: 650px;
+    margin-top: 50px;
 
 }
 
@@ -328,7 +330,7 @@
 #fifthpage {
 
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
 #fifthpage h1 {
@@ -368,6 +370,7 @@
     /* padding: 30px; */
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .paragraph2:hover {
@@ -494,7 +497,8 @@
 #sevenpage {
 
     width: 100%;
-    height: 65vh;
+    height: auto;
+    padding: 40px 20px;
     color: white;
     background-color: black;
     display: flex;
