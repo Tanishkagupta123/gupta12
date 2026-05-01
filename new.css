@@ -5,6 +5,9 @@
     scroll-behavior: smooth;
 }
 
+html, body {
+    overflow-x: hidden;
+} 
 #navbar {
     width: 100%;
     height: 90px;
@@ -491,9 +494,9 @@
 
 #sixpage .map {
 
-    width: 50%;
+    width: 100%;
     height: 400px;
-    /* background-color: green; */
+    flex: 1 1 400px;
 }
 
 
@@ -646,9 +649,9 @@ align-items:center ;
 #sixpage {
 
     /* height: auto; */
+     width: 100%;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 #sevenpage{
