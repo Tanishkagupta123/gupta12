@@ -561,7 +561,7 @@ html, body {
     }
 
     #navbar nav ul li a{
-        color: blue;
+        color: white;
         background-color: black;
 
     }
@@ -686,6 +686,327 @@ flex-wrap: wrap;
     }
 
 }
+}
+
+/* =========================
+   RESPONSIVE CSS
+========================= */
+
+#check {
+    display: none;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 992px) {
+
+    #navbar {
+        padding: 15px 20px;
+    }
+
+    #navbar nav ul {
+        gap: 10px;
+    }
+
+    #firstpage {
+        padding-left: 40px;
+        height: 80vh;
+    }
+
+    .head,
+    .shop {
+        font-size: 50px;
+    }
+
+    #secondpage {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    #secondpage div {
+        padding-top: 50px;
+        padding-left: 0;
+    }
+
+    #secondpage img {
+        width: 90%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #thirdpage div img {
+        width: 45%;
+        height: auto;
+    }
+
+    .mainbox {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .service-box {
+        width: 45%;
+    }
+
+    #fifthpage h2 {
+        padding-left: 50px;
+    }
+
+    .paragraph2 {
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+
+    #sixpage {
+        flex-direction: column;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 350px;
+    }
+
+    .sevenpage5 {
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 40px;
+    }
+
+    .about {
+        width: 45%;
+    }
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+    #mainbar {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        font-size: 28px;
+        color: white;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 20px;
+        position: relative;
+    }
+
+    #navbar img {
+        width: 180px;
+        height: auto;
+    }
+
+    #navbar nav {
+        width: 100%;
+    }
+
+    #navbar nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        padding-top: 20px;
+    }
+
+    #check:checked~#navbar nav ul {
+        display: flex;
+    }
+
+    #navbar i.fa-magnifying-glass {
+        display: none;
+    }
+
+    #firstpage {
+        height: auto;
+        padding: 100px 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .head {
+        font-size: 38px;
+    }
+
+    .shop {
+        font-size: 42px;
+    }
+
+    .port,
+    .port2,
+    .paragraph1,
+    .paragraph2 {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    #secondpage {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    #secondpage div {
+        padding: 0;
+    }
+
+    #secondpage img {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px 0;
+    }
+
+    #thirdpage p {
+        padding: 0 10px;
+    }
+
+    #thirdpage div {
+        flex-direction: column;
+    }
+
+    #thirdpage div img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .button,
+    .button3 {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .mainbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 90%;
+    }
+
+    #fourthpage h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    #fourthpage p {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    #fifthpage h1,
+    #fifthpage .paragraph1,
+    #fifthpage h2,
+    .paragraph2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #fifthpage h2 {
+        font-size: 28px;
+    }
+
+    .paragraph2 {
+        font-size: 16px;
+    }
+
+    #sixpage {
+        flex-direction: column;
+    }
+
+    #sixpage .img_form {
+        padding: 20px;
+        height: auto;
+    }
+
+    #sixpage .img_form form input,
+    #sixpage .img_form form textarea {
+        width: 100%;
+    }
+
+    #sixpage .img_form button {
+        width: 150px;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    #sevenpage {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .sevenpage5 {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0;
+    }
+
+    .about {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media (max-width: 480px) {
+
+    .head {
+        font-size: 30px;
+    }
+
+    .shop {
+        font-size: 34px;
+    }
+
+    .port {
+        font-size: 14px;
+    }
+
+    .head2,
+    .gallery,
+    #fourthpage h1,
+    #fifthpage h1 {
+        font-size: 28px;
+    }
+
+    #fifthpage h2 {
+        font-size: 24px;
+    }
+
+    .paragraph2 {
+        font-size: 14px;
+    }
+
+    .service-box {
+        padding: 20px;
+    }
+
+    .service-box h1 {
+        font-size: 22px;
+    }
+
+    .about h4 {
+        font-size: 22px;
+    }
 }
 
 /*  */
